@@ -1,0 +1,11 @@
+{
+  "samples": {
+    "train": 1800,
+    "val": 230,
+    "test": 800
+  },
+  "images": 11320,
+  "fingerprint": "b2d6b47e3a0609344d08ab87c399d031ccdf5fc3f63ed2d44bc8febff1950895",
+  "exact_pixel_leaks": 0,
+  "limitation": "Undocumented semantic similarities are not ruled out."
+}

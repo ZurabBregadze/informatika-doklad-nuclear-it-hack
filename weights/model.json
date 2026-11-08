@@ -8,12 +8,12 @@
     "batch_size": 4,
     "learning_rate": 0.0001,
     "weight_decay": 0.0001,
-    "max_epochs": 200,
+    "max_epochs": 100,
     "patience": 10,
     "min_delta": 1e-05,
     "seed": 0,
-    "threads": 2,
-    "device": "cuda",
+    "threads": 8,
+    "device": "auto",
     "auxiliary_weight": 0.2,
     "lr_scheduler": "plateau",
     "lr_factor": 0.5,
@@ -21,18 +21,18 @@
     "min_lr": 1e-06,
     "diagnostic_samples": 4
   },
-  "epoch": 63,
-  "global_step": 6300,
-  "dataset_fingerprint": "747961ccf8c44d76f6a243aa08c68306f91030ba56ca7dcd2b8bed8cafa08b9d",
+  "epoch": 53,
+  "global_step": 23850,
+  "dataset_fingerprint": "b2d6b47e3a0609344d08ab87c399d031ccdf5fc3f63ed2d44bc8febff1950895",
   "validation": {
-    "loss": 0.9403668642044067,
-    "mean_pcc": 0.6222515863478086,
-    "mean_ssim": 0.50478259269478
+    "loss": 0.9961917726889901,
+    "mean_pcc": 0.5629962684736782,
+    "mean_ssim": 0.48178664076544775
   },
   "selection_criterion": "validation_loss",
-  "source_checkpoint_sha256": "27490bc8dc1c0a8fc97ce2c9170c1c03c8c4590ec530e69351cf59b1841aa54c",
+  "source_checkpoint_sha256": "da7d9f351525980292c86457ccbab11bf0a71a5d8fe1702eae5b1325991cbd87",
   "filename": "model.pt",
-  "sha256": "196f772b344fef3bb9d2f7701403810b8a34f679053716b98a0801a4e929c1a5",
+  "sha256": "ee5e488bd6af6f61dffdbaa6c5618a7f08c74c6c121b8f284ae0b413193ba405",
   "parameters": 2995501,
   "phase_encoding": "0 -> -pi; 255 -> +pi; nearest integer; 8-bit grayscale PNG"
 }
