@@ -1,0 +1,52 @@
+name: Docker inference
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu-container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build self-contained CPU image
+        run: docker build --progress=plain -t doe-synthesis:test .
+      - name: Prepare five four-image sets
+        run: |
+          mkdir -p /tmp/doe-input /tmp/doe-output
+          cp -R examples/sets/sample_* /tmp/doe-input/
+      - name: Infer five phase masks without network
+        run: |
+          docker run --rm --network none \
+            -v /tmp/doe-input:/input:ro \
+            -v /tmp/doe-output:/output \
+            doe-synthesis:test \
+            --input-root /input --output-dir /output --device cpu \
+            --report /output/run.json
+      - name: Validate exact PNG output contract
+        run: |
+          docker run --rm --network none --entrypoint python \
+            -v /tmp/doe-output:/output:ro \
+            doe-synthesis:test -c '
+          import json, struct
+          from pathlib import Path
+          from PIL import Image
+          files = sorted(Path("/output").glob("sample_*/doe_phase.png"))
+          assert len(files) == 5, files
+          for path in files:
+              data = path.read_bytes()
+              assert data[:8] == b"\x89PNG\r\n\x1a\n"
+              assert struct.unpack(">IIBB", data[16:26]) == (128, 128, 8, 0)
+              with Image.open(path) as image:
+                  assert image.mode == "L" and image.size == (128, 128)
+          assert len(json.loads(Path("/output/run.json").read_text())["scenes"]) == 5
+          print("PASS: five grayscale 8-bit 128x128 DOE PNGs")'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: docker-smoke-output
+          path: /tmp/doe-output

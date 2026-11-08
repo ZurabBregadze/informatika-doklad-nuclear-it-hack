@@ -1,0 +1,15 @@
+**
+!Dockerfile
+!requirements.txt
+!infer.py
+!src/
+!src/doe_p0/
+!src/doe_p0/__init__.py
+!src/doe_p0/fresnel.py
+!src/doe_p0/model.py
+!src/doe_p0/phase.py
+!src/doe_p0/weights.py
+!src/doe_p0/inference.py
+!weights/
+!weights/model.pt
+!weights/model.json

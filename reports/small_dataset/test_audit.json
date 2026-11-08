@@ -1,0 +1,352 @@
+{
+  "audit": {
+    "scenes": 50,
+    "metric_rows": 400,
+    "pngs": 1300,
+    "max_metric_error": 4.440892098500626e-16,
+    "reconstruction_different_pixels": 0,
+    "error_map_different_pixels": 0,
+    "max_error_map_code_difference": 0,
+    "max_error_map_distance_from_rounding_half_tie": 0.0,
+    "previous_gs_pngs_available": false,
+    "gs_masks_different_pixels_vs_previous": null,
+    "checkpoint_sha256": "27490bc8dc1c0a8fc97ce2c9170c1c03c8c4590ec530e69351cf59b1841aa54c",
+    "gs_max_scene_metric_difference_vs_previous": 2.220446049250313e-16
+  },
+  "versus_gs": {
+    "pcc": {
+      "neural": 0.6448998489672468,
+      "gs": 0.7092947609158265,
+      "delta": -0.06439491194857978,
+      "paired_scene_bootstrap_95ci": [
+        -0.0686031648052978,
+        -0.06025525787974885
+      ],
+      "neural_wins": 0,
+      "gs_wins": 50,
+      "ties": 0,
+      "median_delta": -0.06167186967739491
+    },
+    "ssim": {
+      "neural": 0.5293771716287008,
+      "gs": 0.5123982012119981,
+      "delta": 0.016978970416702842,
+      "paired_scene_bootstrap_95ci": [
+        0.007364989859481851,
+        0.026617414892107394
+      ],
+      "neural_wins": 32,
+      "gs_wins": 18,
+      "ties": 0,
+      "median_delta": 0.01476075069252486
+    }
+  },
+  "versus_previous": {
+    "pcc": {
+      "delta": 0.02450325226720859,
+      "paired_scene_bootstrap_95ci": [
+        0.022472009039937884,
+        0.026601990413573976
+      ],
+      "ties": 0,
+      "median_delta": 0.023759676664087848,
+      "previous": 0.6203965967000382,
+      "new": 0.6448998489672468,
+      "previous_wins": 0,
+      "new_wins": 50
+    },
+    "ssim": {
+      "delta": 0.03938424378284974,
+      "paired_scene_bootstrap_95ci": [
+        0.03513186095758921,
+        0.04392469895537071
+      ],
+      "ties": 0,
+      "median_delta": 0.03631065578629383,
+      "previous": 0.48999292784585113,
+      "new": 0.5293771716287008,
+      "previous_wins": 0,
+      "new_wins": 50
+    }
+  },
+  "planes": {
+    "pcc": [
+      {
+        "neural": 0.643334517180347,
+        "gs": 0.7544231862754576,
+        "delta": -0.11108866909511078,
+        "paired_scene_bootstrap_95ci": [
+          -0.12650046916119428,
+          -0.09569396117695213
+        ],
+        "neural_wins": 0,
+        "gs_wins": 50,
+        "ties": 0,
+        "median_delta": -0.11974161163650443
+      },
+      {
+        "neural": 0.6377023535215569,
+        "gs": 0.6708514447957825,
+        "delta": -0.03314909127422577,
+        "paired_scene_bootstrap_95ci": [
+          -0.05154105051643292,
+          -0.01590754909123984
+        ],
+        "neural_wins": 17,
+        "gs_wins": 33,
+        "ties": 0,
+        "median_delta": -0.025164924928557375
+      },
+      {
+        "neural": 0.6570044632851166,
+        "gs": 0.6887715630985616,
+        "delta": -0.031767099813445235,
+        "paired_scene_bootstrap_95ci": [
+          -0.04523884112721801,
+          -0.01933661000260315
+        ],
+        "neural_wins": 10,
+        "gs_wins": 40,
+        "ties": 0,
+        "median_delta": -0.017845851474119045
+      },
+      {
+        "neural": 0.641558061881967,
+        "gs": 0.7231328494935042,
+        "delta": -0.08157478761153732,
+        "paired_scene_bootstrap_95ci": [
+          -0.09447016528289554,
+          -0.06882539131080787
+        ],
+        "neural_wins": 1,
+        "gs_wins": 49,
+        "ties": 0,
+        "median_delta": -0.08349513913300421
+      }
+    ],
+    "ssim": [
+      {
+        "neural": 0.5279269375554432,
+        "gs": 0.5718785496859741,
+        "delta": -0.043951612130530886,
+        "paired_scene_bootstrap_95ci": [
+          -0.07959526087886225,
+          -0.007519929561721292
+        ],
+        "neural_wins": 21,
+        "gs_wins": 29,
+        "ties": 0,
+        "median_delta": -0.05400108637559406
+      },
+      {
+        "neural": 0.5251506206710839,
+        "gs": 0.46558758111039367,
+        "delta": 0.05956303956069012,
+        "paired_scene_bootstrap_95ci": [
+          0.01522342558768204,
+          0.10300580474285648
+        ],
+        "neural_wins": 32,
+        "gs_wins": 18,
+        "ties": 0,
+        "median_delta": 0.09979498711317561
+      },
+      {
+        "neural": 0.538818561291129,
+        "gs": 0.49445362666330844,
+        "delta": 0.04436493462782058,
+        "paired_scene_bootstrap_95ci": [
+          0.01093362250851103,
+          0.07918088449928873
+        ],
+        "neural_wins": 30,
+        "gs_wins": 20,
+        "ties": 0,
+        "median_delta": 0.04946745496020161
+      },
+      {
+        "neural": 0.5256125669971474,
+        "gs": 0.5176730473883159,
+        "delta": 0.007939519608831574,
+        "paired_scene_bootstrap_95ci": [
+          -0.010969703524163309,
+          0.027345721781059016
+        ],
+        "neural_wins": 26,
+        "gs_wins": 24,
+        "ties": 0,
+        "median_delta": 0.008523973083157832
+      }
+    ]
+  },
+  "worst_plane": {
+    "pcc": {
+      "neural": 0.5424389079561402,
+      "gs": 0.6216452732076352,
+      "delta": -0.07920636525149494,
+      "paired_scene_bootstrap_95ci": [
+        -0.09525213932364383,
+        -0.06302707931483459
+      ],
+      "neural_wins": 2,
+      "gs_wins": 48,
+      "ties": 0,
+      "median_delta": -0.07072458134880166
+    },
+    "ssim": {
+      "neural": 0.3895143515199841,
+      "gs": 0.38413506524354957,
+      "delta": 0.005379286276434578,
+      "paired_scene_bootstrap_95ci": [
+        -0.02289009041671891,
+        0.034002334173899175
+      ],
+      "neural_wins": 27,
+      "gs_wins": 23,
+      "ties": 0,
+      "median_delta": 0.006407029344528303
+    }
+  },
+  "depth_selectivity": {
+    "targets_between_planes": 0.27132291672954123,
+    "neural": {
+      "between_planes": 0.838796753649175,
+      "own_target_margin": 0.0727293137509789,
+      "own_target_wins": 78,
+      "total": 200
+    },
+    "gs": {
+      "between_planes": 0.7411250122114439,
+      "own_target_margin": 0.1721979800575914,
+      "own_target_wins": 158,
+      "total": 200
+    }
+  },
+  "sources": {
+    "FashionMNIST": {
+      "images": 67,
+      "neural": {
+        "pcc": 0.7034548748567528,
+        "ssim": 0.5855115385270678
+      },
+      "gs": {
+        "pcc": 0.7423200636281159,
+        "ssim": 0.5354876193485594
+      },
+      "previous": {
+        "pcc": 0.6884650851803684,
+        "ssim": 0.5434980730050514
+      }
+    },
+    "MNIST": {
+      "images": 67,
+      "neural": {
+        "pcc": 0.6605209904909555,
+        "ssim": 0.5633502721908632
+      },
+      "gs": {
+        "pcc": 0.708889621765266,
+        "ssim": 0.5196937543624868
+      },
+      "previous": {
+        "pcc": 0.6386713783746892,
+        "ssim": 0.5294233577870796
+      }
+    },
+    "Omniglot": {
+      "images": 66,
+      "neural": {
+        "pcc": 0.5695998002295894,
+        "ssim": 0.43790443950967867
+      },
+      "gs": {
+        "pcc": 0.6761803524516471,
+        "ssim": 0.4815528515721135
+      },
+      "previous": {
+        "pcc": 0.5327450951790724,
+        "ssim": 0.39564923797117346
+      }
+    }
+  },
+  "previous_data_source": "Project analysis/colab_small_run/paired_scenes.csv, previously independently audited; old raw Downloads export unavailable.",
+  "best_ssim_scene": {
+    "sample": "sample_0466",
+    "new_pcc": 0.6894912576249778,
+    "previous_pcc": 0.6711225497389883,
+    "gs_pcc": 0.7246266345494764,
+    "new_minus_gs_pcc": -0.03513537692449864,
+    "new_ssim": 0.6068960509554419,
+    "previous_ssim": 0.5861934450488018,
+    "gs_ssim": 0.5278654204382645,
+    "new_minus_gs_ssim": 0.0790306305171774
+  },
+  "worst_ssim_scene": {
+    "sample": "sample_0457",
+    "new_pcc": 0.5684420888786507,
+    "previous_pcc": 0.5433735822759942,
+    "gs_pcc": 0.6436835579564465,
+    "new_minus_gs_pcc": -0.07524146907779583,
+    "new_ssim": 0.466059926509671,
+    "previous_ssim": 0.4420552647540684,
+    "gs_ssim": 0.5107515825045824,
+    "new_minus_gs_ssim": -0.04469165599491143
+  },
+  "uncertainty": "Paired 50-scene bootstrap, 20000 draws. Not uncertainty across training seeds; test already observed during method development.",
+  "timing": {
+    "neural_cpu": {
+      "core": {
+        "count": 9,
+        "median_seconds": 0.9698478020000039,
+        "p10_seconds": 0.9530657029998111,
+        "p90_seconds": 1.3754507463992922,
+        "min_seconds": 0.9528686510002444,
+        "max_seconds": 1.3939952319997246
+      },
+      "pipeline": {
+        "count": 9,
+        "median_seconds": 0.9838452200001484,
+        "p10_seconds": 0.9614767087994551,
+        "p90_seconds": 1.3337924069997826,
+        "min_seconds": 0.9441514440004539,
+        "max_seconds": 1.4080503909990512
+      }
+    },
+    "neural_cuda": {
+      "core": {
+        "count": 9,
+        "median_seconds": 0.04141832200002682,
+        "p10_seconds": 0.040701516800618266,
+        "p90_seconds": 0.11106496359971067,
+        "min_seconds": 0.04036483600066276,
+        "max_seconds": 0.38857407800060173
+      },
+      "pipeline": {
+        "count": 9,
+        "median_seconds": 0.04919828700076323,
+        "p10_seconds": 0.048134823600048546,
+        "p90_seconds": 0.052019975600342154,
+        "min_seconds": 0.04783389800104487,
+        "max_seconds": 0.05921974999910162
+      }
+    },
+    "gs_cpu": {
+      "core": {
+        "count": 9,
+        "median_seconds": 2.2204944690001867,
+        "p10_seconds": 2.1835295943998063,
+        "p90_seconds": 2.602501865200247,
+        "min_seconds": 2.1832916000003024,
+        "max_seconds": 2.7646041700008936
+      },
+      "pipeline": {
+        "count": 9,
+        "median_seconds": 2.210197431999404,
+        "p10_seconds": 2.172333468398938,
+        "p90_seconds": 2.991934869801116,
+        "min_seconds": 2.17165512199972,
+        "max_seconds": 3.0012524930007203
+      }
+    }
+  }
+}

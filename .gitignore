@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+.idea/
+.DS_Store
+runs/
+results/
+predictions/
+*.tmp
+*.zip
+data/
+submission_check/
+output/

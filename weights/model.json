@@ -1,0 +1,38 @@
+{
+  "export_kind": "inference",
+  "config": {
+    "training_revision": "2.1",
+    "architecture": "joint_spectral_v2",
+    "width": 32,
+    "feedback_steps": 2,
+    "batch_size": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "max_epochs": 200,
+    "patience": 10,
+    "min_delta": 1e-05,
+    "seed": 0,
+    "threads": 2,
+    "device": "cuda",
+    "auxiliary_weight": 0.2,
+    "lr_scheduler": "plateau",
+    "lr_factor": 0.5,
+    "lr_patience": 2,
+    "min_lr": 1e-06,
+    "diagnostic_samples": 4
+  },
+  "epoch": 63,
+  "global_step": 6300,
+  "dataset_fingerprint": "747961ccf8c44d76f6a243aa08c68306f91030ba56ca7dcd2b8bed8cafa08b9d",
+  "validation": {
+    "loss": 0.9403668642044067,
+    "mean_pcc": 0.6222515863478086,
+    "mean_ssim": 0.50478259269478
+  },
+  "selection_criterion": "validation_loss",
+  "source_checkpoint_sha256": "27490bc8dc1c0a8fc97ce2c9170c1c03c8c4590ec530e69351cf59b1841aa54c",
+  "filename": "model.pt",
+  "sha256": "196f772b344fef3bb9d2f7701403810b8a34f679053716b98a0801a4e929c1a5",
+  "parameters": 2995501,
+  "phase_encoding": "0 -> -pi; 255 -> +pi; nearest integer; 8-bit grayscale PNG"
+}

@@ -1,0 +1,1 @@
+Five ordered target sets, copied without changes from the first five scenes of doe_targets_500_safe/test. Used only for the Docker input/output smoke test, not for training or checkpoint selection. Each set: image_1..4 correspond to 24.1/25.3/26.5/27.7 mm.
