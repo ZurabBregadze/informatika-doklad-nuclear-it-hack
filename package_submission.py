@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parent
 ROOT_FILES = ('README.md', 'Dockerfile', '.dockerignore', '.gitignore', 'requirements.txt',
               'pyproject.toml', 'infer.py', 'export_weights.py', 'package_submission.py',
               'train.py', 'compare.py', 'predict.py', 'gs.py')
-DOC_FILES = ('TRAINING.md', 'RESULTS.md', 'SUBMISSION.md', 'DEFENSE.md')
+DOC_FILES = ('TRAINING.md', 'RESULTS.md')
 
 
 def submission_files():
