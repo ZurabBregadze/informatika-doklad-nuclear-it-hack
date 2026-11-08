@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import struct
+import stat
 import subprocess
 import sys
 
@@ -63,6 +64,7 @@ def test_five_sets_one_model_load_and_exact_output_contract(weights, tmp_path, m
     for task in tasks:
         path = task['output']
         assert struct.unpack('>IIBB', path.read_bytes()[16:26])==(128, 128, 8, 0)
+        assert stat.S_IMODE(path.stat().st_mode)==0o644
         with Image.open(path) as image:
             assert image.mode=='L' and image.size==(128, 128)
     assert json.loads((tmp_path/'output/run.json').read_text())==report

@@ -63,6 +63,9 @@ def save_phase(codes, output):
             temporary.unlink(missing_ok=True)
             raise
     try:
+        # NamedTemporaryFile starts at 0600. Make the final PNG readable by a
+        # host evaluator even when Docker creates it as root on a bind mount.
+        temporary.chmod(0o644)
         temporary.replace(output)
     finally:
         temporary.unlink(missing_ok=True)
