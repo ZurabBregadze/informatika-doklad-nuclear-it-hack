@@ -1,92 +1,93 @@
 {
- "source": "/beegfs/home/n.rybin/gayazov/ai-photonics/ai-photonics/data/export/photo_v1_v1_suite/main",
- "seed": 0,
- "key": "kind",
- "quads": {
-  "train": 1800,
-  "val": 230,
-  "test": 800
- },
- "counts": {
-  "train": {
-   "source": {
-    "main|all_dense|ov3": 51,
-    "main|all_dense|ov0": 962,
-    "main|all_dense|ov1": 962,
-    "main|mixed|ov0": 438,
-    "main|all_dense|ov2": 775,
-    "main|all_sparse|ov1": 350,
-    "main|all_sparse|ov0": 350,
-    "main|mixed|ov1": 438,
-    "main|mixed|ov2": 374,
-    "main|all_sparse|ov2": 299,
-    "main|all_sparse|ov3": 1
-   },
-   "subset": {
-    "main|all_dense|ov1": 346,
-    "main|all_dense|ov0": 346,
-    "main|all_dense|ov3": 18,
-    "main|all_sparse|ov1": 126,
-    "main|mixed|ov0": 158,
-    "main|all_dense|ov2": 279,
-    "main|mixed|ov2": 134,
-    "main|mixed|ov1": 158,
-    "main|all_sparse|ov2": 108,
-    "main|all_sparse|ov0": 126,
-    "main|all_sparse|ov3": 1
-   }
+  "source": "photo_v1_v1_suite/main",
+  "seed": 0,
+  "key": "kind",
+  "quads": {
+    "train": 1800,
+    "val": 230,
+    "test": 800
   },
-  "val": {
-   "source": {
-    "main|mixed|ov2": 37,
-    "main|all_sparse|ov1": 35,
-    "main|all_dense|ov2": 81,
-    "main|all_dense|ov0": 96,
-    "main|all_sparse|ov2": 30,
-    "main|all_dense|ov1": 96,
-    "main|all_sparse|ov0": 35,
-    "main|mixed|ov1": 44,
-    "main|mixed|ov0": 44,
-    "main|all_dense|ov3": 2
-   },
-   "subset": {
-    "main|mixed|ov2": 17,
-    "main|all_dense|ov1": 44,
-    "main|all_dense|ov2": 37,
-    "main|all_sparse|ov1": 16,
-    "main|all_sparse|ov0": 16,
-    "main|all_dense|ov0": 44,
-    "main|mixed|ov1": 20,
-    "main|all_sparse|ov2": 14,
-    "main|mixed|ov0": 20,
-    "main|all_dense|ov3": 2
-   }
+  "counts": {
+    "train": {
+      "source": {
+        "main|all_dense|ov3": 51,
+        "main|all_dense|ov0": 962,
+        "main|all_dense|ov1": 962,
+        "main|mixed|ov0": 438,
+        "main|all_dense|ov2": 775,
+        "main|all_sparse|ov1": 350,
+        "main|all_sparse|ov0": 350,
+        "main|mixed|ov1": 438,
+        "main|mixed|ov2": 374,
+        "main|all_sparse|ov2": 299,
+        "main|all_sparse|ov3": 1
+      },
+      "subset": {
+        "main|all_dense|ov1": 346,
+        "main|all_dense|ov0": 346,
+        "main|all_dense|ov3": 18,
+        "main|all_sparse|ov1": 126,
+        "main|mixed|ov0": 158,
+        "main|all_dense|ov2": 279,
+        "main|mixed|ov2": 134,
+        "main|mixed|ov1": 158,
+        "main|all_sparse|ov2": 108,
+        "main|all_sparse|ov0": 126,
+        "main|all_sparse|ov3": 1
+      }
+    },
+    "val": {
+      "source": {
+        "main|mixed|ov2": 37,
+        "main|all_sparse|ov1": 35,
+        "main|all_dense|ov2": 81,
+        "main|all_dense|ov0": 96,
+        "main|all_sparse|ov2": 30,
+        "main|all_dense|ov1": 96,
+        "main|all_sparse|ov0": 35,
+        "main|mixed|ov1": 44,
+        "main|mixed|ov0": 44,
+        "main|all_dense|ov3": 2
+      },
+      "subset": {
+        "main|mixed|ov2": 17,
+        "main|all_dense|ov1": 44,
+        "main|all_dense|ov2": 37,
+        "main|all_sparse|ov1": 16,
+        "main|all_sparse|ov0": 16,
+        "main|all_dense|ov0": 44,
+        "main|mixed|ov1": 20,
+        "main|all_sparse|ov2": 14,
+        "main|mixed|ov0": 20,
+        "main|all_dense|ov3": 2
+      }
+    },
+    "test": {
+      "source": {
+        "main|all_dense|ov1": 154,
+        "main|all_dense|ov0": 154,
+        "main|mixed|ov2": 60,
+        "main|mixed|ov1": 70,
+        "main|all_sparse|ov0": 56,
+        "main|mixed|ov0": 70,
+        "main|all_dense|ov2": 123,
+        "main|all_sparse|ov2": 48,
+        "main|all_sparse|ov1": 56,
+        "main|all_dense|ov3": 9
+      },
+      "subset": {
+        "main|all_dense|ov1": 154,
+        "main|all_dense|ov0": 154,
+        "main|mixed|ov2": 60,
+        "main|mixed|ov1": 70,
+        "main|all_sparse|ov0": 56,
+        "main|mixed|ov0": 70,
+        "main|all_dense|ov2": 123,
+        "main|all_sparse|ov2": 48,
+        "main|all_sparse|ov1": 56,
+        "main|all_dense|ov3": 9
+      }
+    }
   },
-  "test": {
-   "source": {
-    "main|all_dense|ov1": 154,
-    "main|all_dense|ov0": 154,
-    "main|mixed|ov2": 60,
-    "main|mixed|ov1": 70,
-    "main|all_sparse|ov0": 56,
-    "main|mixed|ov0": 70,
-    "main|all_dense|ov2": 123,
-    "main|all_sparse|ov2": 48,
-    "main|all_sparse|ov1": 56,
-    "main|all_dense|ov3": 9
-   },
-   "subset": {
-    "main|all_dense|ov1": 154,
-    "main|all_dense|ov0": 154,
-    "main|mixed|ov2": 60,
-    "main|mixed|ov1": 70,
-    "main|all_sparse|ov0": 56,
-    "main|mixed|ov0": 70,
-    "main|all_dense|ov2": 123,
-    "main|all_sparse|ov2": 48,
-    "main|all_sparse|ov1": 56,
-    "main|all_dense|ov3": 9
-   }
-  }
- }
+  "source_path_note": "Dataset identifier retained; machine-specific home path omitted."
 }

@@ -1,4 +1,4 @@
-"""Open this file in PyCharm and press Run. Edit settings below."""
+"""Train the current architecture on the prepared main subset."""
 from pathlib import Path
 import sys
 
@@ -7,8 +7,8 @@ sys.path.insert(0, str(PROJECT/'src'))
 
 from doe_p0.training import train
 
-DATA_ROOT = PROJECT/'data'/'doe_targets_500_safe'
-OUTPUT = PROJECT/'runs'/'joint_spectral_v2_1'
+DATA_ROOT = PROJECT/'data'/'main_subset'
+OUTPUT = PROJECT/'runs'/'current_model'
 RESUME = None  # To continue: OUTPUT/'last.pt'
 
 CONFIG = dict(
@@ -18,11 +18,11 @@ CONFIG = dict(
     batch_size=4,
     learning_rate=1e-4,
     weight_decay=1e-4,
-    max_epochs=200,
+    max_epochs=100,
     patience=10,
     min_delta=1e-5,
     seed=0,
-    threads=4,
+    threads=8,
     device='auto',  # 'auto', 'cpu' or 'cuda'. Mac uses CPU for complex FFT.
     auxiliary_weight=.2,
     lr_scheduler='plateau',

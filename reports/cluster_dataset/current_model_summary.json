@@ -1,0 +1,58 @@
+{
+  "scope": "Current bundled weights; aggregate test results supplied with the repository archive.",
+  "architecture": "joint_spectral_v2",
+  "epoch": 53,
+  "global_step": 23850,
+  "weights_sha256": "ee5e488bd6af6f61dffdbaa6c5618a7f08c74c6c121b8f284ae0b413193ba405",
+  "source_checkpoint_sha256": "da7d9f351525980292c86457ccbab11bf0a71a5d8fe1702eae5b1325991cbd87",
+  "dataset_fingerprint": "b2d6b47e3a0609344d08ab87c399d031ccdf5fc3f63ed2d44bc8febff1950895",
+  "validation": {
+    "loss": 0.9961917726889901,
+    "mean_pcc": 0.5629962684736782,
+    "mean_ssim": 0.48178664076544775
+  },
+  "logged_epochs": 53,
+  "best_loss_epoch": 53,
+  "best_ssim_epoch": 52,
+  "training_stop_reason": "Not established by the supplied history; last bad_epochs is zero.",
+  "test_scene_counts": {
+    "main": 800,
+    "test_reference": 50,
+    "test_similar": 150,
+    "test_photo": 300,
+    "test_ood_photo": 200,
+    "test_texture": 150,
+    "test_sparse": 150,
+    "test_charts": 30,
+    "test_mixed": 150
+  },
+  "test_scenes": 1980,
+  "test_images": 7920,
+  "macro_over_test_sets": {
+    "neural_ssim": 0.49823009855417133,
+    "neural_pcc": 0.5760918997423395,
+    "numeric_ssim": 0.5476755555555556,
+    "numeric_pcc": 0.6324255555555555
+  },
+  "weighted_by_scene_count": {
+    "neural_ssim": 0.4822240854185987,
+    "neural_pcc": 0.5550321157436181,
+    "numeric_ssim": 0.5291219191919192,
+    "numeric_pcc": 0.6068685858585858
+  },
+  "quality_protocol": {
+    "phase_bits": 8,
+    "reconstruction": "amplitude divided by its own maximum, then 8-bit PNG",
+    "neural_target": "pixel / 255",
+    "numeric_target": "target divided by its own maximum",
+    "same_target_normalization": false,
+    "metric": "global SSIM and Pearson"
+  },
+  "numeric_method": "GS 200 iterations + Adam 300 steps, reported baseline; not implemented by compare.py",
+  "provenance": {
+    "test_table": "compare_target255.csv",
+    "training": "training_history.json",
+    "weights": "../../weights/model.json"
+  },
+  "verification_limit": "Per-scene targets, phase masks and raw numerical-optimizer logs are not included; test metrics were not independently recomputed."
+}

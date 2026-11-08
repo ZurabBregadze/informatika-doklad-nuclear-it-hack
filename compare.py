@@ -1,4 +1,4 @@
-"""Run after train.py to export neural/GS PNGs and metrics on test only."""
+"""Compare bundled weights with GS on the prepared test split."""
 from pathlib import Path
 import sys
 
@@ -7,12 +7,12 @@ sys.path.insert(0, str(PROJECT/'src'))
 
 from doe_p0.comparison import compare
 
-DATA_ROOT = PROJECT/'data'/'doe_targets_500_safe'
-CHECKPOINT = PROJECT/'runs'/'joint_spectral_v2_1'/'best.pt'
-OUTPUT = PROJECT/'results'/'joint_spectral_v2_1'
+DATA_ROOT = PROJECT/'data'/'main_subset'
+CHECKPOINT = PROJECT/'weights'/'model.pt'
+OUTPUT = PROJECT/'results'/'current_model_gs200'
 GS_ITERATIONS = 200
 GS_SEED = 0
-LIMIT = None  # None = all 50 test scenes. Example: 5 for a preliminary comparison.
+LIMIT = None  # All scenes in the supplied test split.
 DEVICE = 'auto'
 TIMING_SAMPLES = 3
 TIMING_REPEATS = 3

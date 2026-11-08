@@ -11,8 +11,8 @@ from doe_p0.data import read_images
 from doe_p0.metrics import export_scene
 from doe_p0.training import load_model, seed_everything, select_device
 
-CHECKPOINT = PROJECT/'runs'/'joint_spectral_v2_1'/'best.pt'
-INPUT = [PROJECT/'data/doe_targets_500_safe/test/sample_0451'/f'image_{k}.png' for k in range(1, 5)]
+CHECKPOINT = PROJECT/'weights'/'model.pt'
+INPUT = [PROJECT/'examples/sets/sample_0451'/f'image_{k}.png' for k in range(1, 5)]
 OUTPUT = PROJECT/'predictions'/'example'
 DEVICE = 'auto'
 
